@@ -311,12 +311,12 @@ public class JFrameTP3 extends JFrame {
 				comboBoxStatut.setSelectedItem(rs.getString(4));
 				
 				//Ajoute les membres relié a chaque projet dans les détails
-				ResultSet rs2 = stmt.executeQuery("select PRENOM_MEM, NOM_MEM from TP2_EQUIPE_PROJET E, TP2_MEMBRE M where  NO_PROJET ='"+ NoProjet +"' and M.NO_MEMBRE = E.NO_MEMBRE");
+				//ResultSet rs2 = stmt.executeQuery("select PRENOM_MEM, NOM_MEM from TP2_EQUIPE_PROJET E, TP2_MEMBRE M where  NO_PROJET ='"+ NoProjet +"' and M.NO_MEMBRE = E.NO_MEMBRE");
 					
-				while (rs2.next()) {
+				//while (rs2.next()) {
 						
-						textAreaMembre.append(rs2.getString(1) + " " + rs2.getString(2) + "\n");
-				}
+						//textAreaMembre.append(rs2.getString(1) + " " + rs2.getString(2) + "\n");
+				//}
 		}
 				
 		String[] tableauBidon = new String[Projets.size()];
