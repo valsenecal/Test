@@ -389,6 +389,7 @@ public class JFrameTP3 extends JFrame {
 			comboBoxStatut.setSelectedItem(" ");
 			buttonMettreAJour.setEnabled(true);
 			buttonOk.setEnabled(true);
+			buttonAnnuler.setEnabled(true);
 			
 		}catch(Exception ex) {
 			//en cas d'erreur, affiche l'erreur retournée par Oracle ou par le pilote de connexion à Oracle
